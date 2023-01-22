@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 body{
   min-height: 100vh;
@@ -56,12 +57,14 @@ button{
   align-items: center;
   font-size: 2rem;
   box-sizing: content-box;
-  font-family: monospace;
+  font-family: 'Silkscreen', cursive;
 }
 .scoreboard{
   position: absolute;
   top: 10px;
   left: 6px;
+  font-size: 20px;
+  font-family: 'Silkscreen', cursive;
 }
 .tiles{
   font-size: 4rem;

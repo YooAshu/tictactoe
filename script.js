@@ -2,10 +2,18 @@ let board = document.getElementsByClassName('board')[0]
 let random = true;
 let lastRenderTime = 0
 let speed = 4
-
+let gameover = false
+let x = false
+let o = false
+let m = 0
+let n = 0
 for (let i = 1; i <= 9; i++) {
   board.innerHTML += `<button id = "t${i}" class = "tiles" onclick = "game('t${i}')"></button>`
 }
+let you = document.getElementsByClassName('you')[0]
+let comp = document.getElementsByClassName('comp')[0]
+you.innerHTML = m
+comp.innerHTML = n
 let t1 = document.getElementById('t1')
 let t2 = document.getElementById('t2')
 let t3 = document.getElementById('t3')
@@ -28,7 +36,7 @@ restart.onclick = function startgame() {
     entry.disabled = false
     entry.style.color = 'black'
   })
-
+  gameover = false
   tilelist = ['t1', 't2', 't3', 't4', 't5', 't6', 't7', 't8', 't9']
 }
 function game(a) {
@@ -318,7 +326,18 @@ function game(a) {
       document.getElementById(opp).innerText = "O"
       document.getElementById(opp).disabled = "disabled"
     }
-    catch { console.log('omfoo') }
+    catch {
+      setTimeout(function() {
+        tiles.forEach(function clear(entry) {
+
+          entry.innerHTML = ''
+          entry.disabled = false
+          entry.style.color = 'black'
+        })
+        gameover = false
+        tilelist = ['t1', 't2', 't3', 't4', 't5', 't6', 't7', 't8', 't9']
+      }, 1000)
+    }
     random = false
   }
 }
@@ -331,6 +350,7 @@ function main(currentTime) {
 
 
   checkwin()
+  isgameover()
 
 }
 window.requestAnimationFrame(main);
@@ -341,64 +361,100 @@ function checkwin() {
     t1.style.color = 'red'
     t2.style.color = 'red'
     t3.style.color = 'red'
-    
+    gameover = true
     random = false
+    if (t1.innerHTML == 'X') { x = true } else { o = true }
   }
   // for(1,4,7)
   else if ((t1.innerHTML == t4.innerHTML) && (t4.innerHTML == t7.innerHTML) && (t1.innerHTML !== "")) {
     t1.style.color = 'red'
     t4.style.color = 'red'
     t7.style.color = 'red'
-    
+    gameover = true
     random = false
+    if (t1.innerHTML == 'X') { x = true } else { o = true }
   }
   // for(1,5,9)
   else if ((t1.innerHTML == t5.innerHTML) && (t5.innerHTML == t9.innerHTML) && (t1.innerHTML !== "")) {
     t1.style.color = 'red'
     t5.style.color = 'red'
     t9.style.color = 'red'
-    
+    gameover = true
     random = false
+    if (t1.innerHTML == 'X') { x = true } else { o = true }
   }
   // for(3,6,9)
   else if ((t3.innerHTML == t6.innerHTML) && (t6.innerHTML == t9.innerHTML) && (t3.innerHTML !== "")) {
     t3.style.color = 'red'
     t6.style.color = 'red'
     t9.style.color = 'red'
-    
+    gameover = true
     random = false
+    if (t3.innerHTML == 'X') { x = true } else { o = true }
   }
   // for(3,5,7)
   else if ((t3.innerHTML == t5.innerHTML) && (t5.innerHTML == t7.innerHTML) && (t3.innerHTML !== "")) {
     t3.style.color = 'red'
     t5.style.color = 'red'
     t7.style.color = 'red'
-    
+    gameover = true
     random = false
+    if (t3.innerHTML == 'X') { x = true } else { o = true }
   }
   // for(7,8,9)
   else if ((t7.innerHTML == t8.innerHTML) && (t8.innerHTML == t9.innerHTML) && (t7.innerHTML !== "")) {
     t7.style.color = 'red'
     t8.style.color = 'red'
     t9.style.color = 'red'
-    
+    gameover = true
     random = false
+    if (t7.innerHTML == 'X') { x = true } else { o = true }
   }
   // for(2,5,8)
   else if ((t2.innerHTML == t5.innerHTML) && (t5.innerHTML == t8.innerHTML) && (t2.innerHTML !== "")) {
     t2.style.color = 'red'
     t8.style.color = 'red'
     t5.style.color = 'red'
-    
+    gameover = true
     random = false
+    if (t2.innerHTML == 'X') { x = true } else { o = true }
   }
   // for(4,5,6)
   else if ((t4.innerHTML == t5.innerHTML) && (t5.innerHTML == t6.innerHTML) && (t4.innerHTML !== "")) {
     t4.style.color = 'red'
     t5.style.color = 'red'
     t6.style.color = 'red'
-    
+    gameover = true
     random = false
+    if (t4.innerHTML == 'X') { x = true } else { o = true }
+  }
+}
+function isgameover() {
+  if (gameover) {
+    if (x) {
+      m += 1
+      x = false
+
+      if (m % 4 == 0) { you.innerHTML = m / 4 }
+
+    }
+    else if (o) {
+      n += 1
+      o = false
+      if (n % 4 == 0) { comp.innerHTML = n / 4 }
+
+
+    }
+    setTimeout(function() {
+      tiles.forEach(function clear(entry) {
+
+        entry.innerHTML = ''
+        entry.disabled = false
+        entry.style.color = 'black'
+      })
+      gameover = false
+      tilelist = ['t1', 't2', 't3', 't4', 't5', 't6', 't7', 't8', 't9']
+    }, 1000)
   }
 }
 
