@@ -13,12 +13,23 @@
 
 <body>
 
-  <div class="board"></div>
+  <div class="board">
+    <div class="twopboard">
+      <div id="xturn" >X</div>
+      <div id="oturn" >0</div>
+      <div id="xturn-oturn">X's turn</div>
+    </div>
+  </div>
   <div class="restart">Restart Game</div>
   <div class="scoreboard">
-    <div>your score : <span class="you"></span></div>
-    <div> computer : <span class="comp"></span></div>
+    <div id="player1">your score : <span class="you"></span></div>
+    <div id="player2"> computer : <span class="comp"></span></div>
   </div>
+  <div class="onep-twop">
+    <div id="onep" onclick="oneplayer()">1p</div>
+    <div id="twop" onclick="twoplayer()">2p</div>
+  </div>
+
 
   <script src="script.js"></script>
 </body>
