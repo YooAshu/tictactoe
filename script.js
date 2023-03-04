@@ -46,6 +46,8 @@ twoplayer = () => {
   document.getElementsByClassName('twopboard')[0].style.visibility = "unset"
   twopbool = true
   onepbool = false
+  turnx = true
+  turn0 = false
   player1.innerHTML = 'player1(X) : <span class="you"></span>'
   player2.innerHTML = 'player2(0) : <span class="comp"></span>'
   m = 0
@@ -109,10 +111,265 @@ function game(a) {
     document.getElementById(a).innerText = 'X'
     document.getElementById(a).disabled = "disabled"
 
+    //to let computer win
+    //for (1,2,3)
+    if (t3.innerHTML == '' && t2.innerHTML == 'O' && t1.innerHTML == 'O') {
+      t3.innerHTML = 'O'
+      t3.disabled = 'disabled'
+      let t = tilelist.indexOf('t3')
+      random = false
+      if (t > -1) {
+        tilelist.splice(t, 1)
 
+      }
+    }
+    else if (t2.innerHTML == '' && t3.innerHTML == 'O' && t1.innerHTML == 'O') {
+      t2.innerHTML = 'O'
+      t2.disabled = 'disabled'
+      let t = tilelist.indexOf('t2')
+      random = false
+      if (t > -1) {
+        tilelist.splice(t, 1)
 
+      }
+    }
+    else if (t1.innerHTML == '' && t3.innerHTML == 'O' && t2.innerHTML == 'O') {
+      t1.innerHTML = 'O'
+      t1.disabled = 'disabled'
+      let t = tilelist.indexOf('t1')
+      random = false
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    // for(1,4,7)
+    else if (t7.innerHTML == '' && t4.innerHTML == 'O' && t1.innerHTML == 'O') {
+      t7.innerHTML = 'O'
+      t7.disabled = 'disabled'
+      let t = tilelist.indexOf('t7')
+      random = false
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t4.innerHTML == '' && t7.innerHTML == 'O' && t1.innerHTML == 'O') {
+      t4.innerHTML = 'O'
+      t4.disabled = 'disabled'
+      let t = tilelist.indexOf('t4')
+      random = false
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t1.innerHTML == '' && t7.innerHTML == 'O' && t4.innerHTML == 'O') {
+      t1.innerHTML = 'O'
+      t1.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t1')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    // for(1,5,9)
+    else if (t9.innerHTML == '' && t5.innerHTML == 'O' && t1.innerHTML == 'O') {
+      t9.innerHTML = 'O'
+      t9.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t9')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+
+    else if (t5.innerHTML == '' && t9.innerHTML == 'O' && t1.innerHTML == 'O') {
+      t5.innerHTML = 'O'
+      t5.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t5')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+
+    else if (t1.innerHTML == '' && t9.innerHTML == 'O' && t5.innerHTML == 'O') {
+      t1.innerHTML = 'O'
+      t1.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t1')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+
+    // for (3,6,9)
+
+    else if (t3.innerHTML == '' && t6.innerHTML == 'O' && t9.innerHTML == 'O') {
+      t3.innerHTML = 'O'
+      t3.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t3')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t6.innerHTML == '' && t3.innerHTML == 'O' && t9.innerHTML == 'O') {
+      t6.innerHTML = 'O'
+      t6.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t6')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t9.innerHTML == '' && t6.innerHTML == 'O' && t3.innerHTML == 'O') {
+      t9.innerHTML = 'O'
+      t9.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t9')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    // for(7,8,9)
+    else if (t7.innerHTML == '' && t8.innerHTML == 'O' && t9.innerHTML == 'O') {
+      t7.innerHTML = 'O'
+      t7.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t7')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t8.innerHTML == '' && t7.innerHTML == 'O' && t9.innerHTML == 'O') {
+      t8.innerHTML = 'O'
+      t8.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t8')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t9.innerHTML == '' && t7.innerHTML == 'O' && t8.innerHTML == 'O') {
+      t9.innerHTML = 'O'
+      t9.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t9')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    // for(3,5,7)
+
+    else if (t3.innerHTML == '' && t5.innerHTML == 'O' && t7.innerHTML == 'O') {
+      t3.innerHTML = 'O'
+      t3.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t3')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t5.innerHTML == '' && t3.innerHTML == 'O' && t7.innerHTML == 'O') {
+      t5.innerHTML = 'O'
+      t5.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t5')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t7.innerHTML == '' && t3.innerHTML == 'O' && t5.innerHTML == 'O') {
+      t7.innerHTML = 'O'
+      t7.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t7')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    // for (4,5,6)
+    else if (t4.innerHTML == '' && t5.innerHTML == 'O' && t6.innerHTML == 'O') {
+      t4.innerHTML = 'O'
+      t4.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t4')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t5.innerHTML == '' && t4.innerHTML == 'O' && t6.innerHTML == 'O') {
+      t5.innerHTML = 'O'
+      t5.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t5')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t6.innerHTML == '' && t4.innerHTML == 'O' && t5.innerHTML == 'O') {
+      t6.innerHTML = 'O'
+      t6.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t6')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    // for(2,5,8)
+    else if (t2.innerHTML == '' && t8.innerHTML == 'O' && t5.innerHTML == 'O') {
+      t2.innerHTML = 'O'
+      t2.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t2')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t5.innerHTML == '' && t2.innerHTML == 'O' && t8.innerHTML == 'O') {
+      t5.innerHTML = 'O'
+      t5.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t5')
+      if (t > -1) {
+        tilelist.splice(t, 1)
+
+      }
+    }
+    else if (t8.innerHTML == '' && t2.innerHTML == 'O' && t5.innerHTML == 'O') {
+      t8.innerHTML = 'O'
+      t8.disabled = 'disabled'
+      random = false
+      let t = tilelist.indexOf('t8')
+      if (t > -1) {
+
+        tilelist.splice(t, 1)
+
+      }
+    }
+    
+    //to stop player win
     // FOR (1,2,3) 
-    if (t3.innerHTML == '' && t2.innerHTML == 'X' && t1.innerHTML == 'X') {
+    else if (t3.innerHTML == '' && t2.innerHTML == 'X' && t1.innerHTML == 'X') {
       t3.innerHTML = 'O'
       t3.disabled = 'disabled'
       let t = tilelist.indexOf('t3')
@@ -445,7 +702,7 @@ function game(a) {
     //   document.getElementById('xturn').classList.remove('xturn')
     //   document.getElementById('oturn').classList.add('oturn')
     //   document.getElementById('xturn-oturn').innerHTML = "0's turn"
-      document.getElementById(a).innerText = "0"
+      document.getElementById(a).innerText = "O"
       turnx = true
       turn0 = false
     }
@@ -474,7 +731,7 @@ function main(currentTime) {
     
       document.getElementById('xturn').classList.remove('xturn')
       document.getElementById('oturn').classList.add('oturn')
-      document.getElementById('xturn-oturn').innerHTML = "0's turn"
+      document.getElementById('xturn-oturn').innerHTML = "O's turn"
   }
   checkwin()
   isgameover()
@@ -488,6 +745,7 @@ function checkwin() {
     t1.style.color = 'red'
     t2.style.color = 'red'
     t3.style.color = 'red'
+    board.classList.add('board123')
     gameover = true
     random = false
     if (t1.innerHTML == 'X') { x = true } else { o = true }
@@ -498,6 +756,7 @@ function checkwin() {
     t1.style.color = 'red'
     t4.style.color = 'red'
     t7.style.color = 'red'
+    board.classList.add('board147')
     gameover = true
     random = false
     if (t1.innerHTML == 'X') { x = true } else { o = true }
@@ -508,6 +767,7 @@ function checkwin() {
     t1.style.color = 'red'
     t5.style.color = 'red'
     t9.style.color = 'red'
+     board.classList.add('board159')
     gameover = true
     random = false
     if (t1.innerHTML == 'X') { x = true } else { o = true }
@@ -518,6 +778,7 @@ function checkwin() {
     t3.style.color = 'red'
     t6.style.color = 'red'
     t9.style.color = 'red'
+    board.classList.add('board369')
     gameover = true
     random = false
     if (t3.innerHTML == 'X') { x = true } else { o = true }
@@ -528,6 +789,7 @@ function checkwin() {
     t3.style.color = 'red'
     t5.style.color = 'red'
     t7.style.color = 'red'
+      board.classList.add('board357')
     gameover = true
     random = false
     if (t3.innerHTML == 'X') { x = true } else { o = true }
@@ -538,6 +800,7 @@ function checkwin() {
     t7.style.color = 'red'
     t8.style.color = 'red'
     t9.style.color = 'red'
+    board.classList.add('board789')
     gameover = true
     random = false
     if (t7.innerHTML == 'X') { x = true } else { o = true }
@@ -548,6 +811,7 @@ function checkwin() {
     t2.style.color = 'red'
     t8.style.color = 'red'
     t5.style.color = 'red'
+    board.classList.add('board258')
     gameover = true
     random = false
     if (t2.innerHTML == 'X') { x = true } else { o = true }
@@ -558,6 +822,7 @@ function checkwin() {
     t4.style.color = 'red'
     t5.style.color = 'red'
     t6.style.color = 'red'
+    board.classList.add('board456')
     gameover = true
     random = false
     if (t4.innerHTML == 'X') { x = true } else { o = true }
@@ -599,6 +864,7 @@ function gamerestart() {
       entry.innerHTML = ''
       entry.disabled = false
       entry.style.color = 'black'
+      board.className ="board"
     })
 
   }, 750)
