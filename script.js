@@ -114,7 +114,10 @@ function game(a) {
     //to let computer win
     //for (1,2,3)
     if (t3.innerHTML == '' && t2.innerHTML == 'O' && t1.innerHTML == 'O') {
+      setTimeout(function(){
       t3.innerHTML = 'O'
+        
+      },300)
       t3.disabled = 'disabled'
       let t = tilelist.indexOf('t3')
       random = false
@@ -124,7 +127,10 @@ function game(a) {
       }
     }
     else if (t2.innerHTML == '' && t3.innerHTML == 'O' && t1.innerHTML == 'O') {
+      setTimeout(function(){
       t2.innerHTML = 'O'
+        
+      },300)
       t2.disabled = 'disabled'
       let t = tilelist.indexOf('t2')
       random = false
@@ -134,7 +140,10 @@ function game(a) {
       }
     }
     else if (t1.innerHTML == '' && t3.innerHTML == 'O' && t2.innerHTML == 'O') {
+      setTimeout(function(){
       t1.innerHTML = 'O'
+        
+      },300)
       t1.disabled = 'disabled'
       let t = tilelist.indexOf('t1')
       random = false
@@ -145,7 +154,10 @@ function game(a) {
     }
     // for(1,4,7)
     else if (t7.innerHTML == '' && t4.innerHTML == 'O' && t1.innerHTML == 'O') {
+      setTimeout(function(){
       t7.innerHTML = 'O'
+        
+      },300)
       t7.disabled = 'disabled'
       let t = tilelist.indexOf('t7')
       random = false
@@ -155,7 +167,10 @@ function game(a) {
       }
     }
     else if (t4.innerHTML == '' && t7.innerHTML == 'O' && t1.innerHTML == 'O') {
+      setTimeout(function(){
       t4.innerHTML = 'O'
+        
+      },300)
       t4.disabled = 'disabled'
       let t = tilelist.indexOf('t4')
       random = false
@@ -165,7 +180,10 @@ function game(a) {
       }
     }
     else if (t1.innerHTML == '' && t7.innerHTML == 'O' && t4.innerHTML == 'O') {
+      setTimeout(function(){
       t1.innerHTML = 'O'
+        
+      },300)
       t1.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t1')
@@ -176,7 +194,10 @@ function game(a) {
     }
     // for(1,5,9)
     else if (t9.innerHTML == '' && t5.innerHTML == 'O' && t1.innerHTML == 'O') {
+      setTimeout(function(){
       t9.innerHTML = 'O'
+        
+      },300)
       t9.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t9')
@@ -187,7 +208,10 @@ function game(a) {
     }
 
     else if (t5.innerHTML == '' && t9.innerHTML == 'O' && t1.innerHTML == 'O') {
+      setTimeout(function(){
       t5.innerHTML = 'O'
+        
+      },300)
       t5.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t5')
@@ -198,7 +222,10 @@ function game(a) {
     }
 
     else if (t1.innerHTML == '' && t9.innerHTML == 'O' && t5.innerHTML == 'O') {
+      setTimeout(function(){
       t1.innerHTML = 'O'
+        
+      },300)
       t1.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t1')
@@ -211,7 +238,10 @@ function game(a) {
     // for (3,6,9)
 
     else if (t3.innerHTML == '' && t6.innerHTML == 'O' && t9.innerHTML == 'O') {
+      setTimeout(function(){
       t3.innerHTML = 'O'
+        
+      },300)
       t3.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t3')
@@ -221,7 +251,10 @@ function game(a) {
       }
     }
     else if (t6.innerHTML == '' && t3.innerHTML == 'O' && t9.innerHTML == 'O') {
+      setTimeout(function(){
       t6.innerHTML = 'O'
+        
+      },300)
       t6.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t6')
@@ -231,7 +264,10 @@ function game(a) {
       }
     }
     else if (t9.innerHTML == '' && t6.innerHTML == 'O' && t3.innerHTML == 'O') {
+      setTimeout(function(){
       t9.innerHTML = 'O'
+        
+      },300)
       t9.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t9')
@@ -242,7 +278,10 @@ function game(a) {
     }
     // for(7,8,9)
     else if (t7.innerHTML == '' && t8.innerHTML == 'O' && t9.innerHTML == 'O') {
+      setTimeout(function(){
       t7.innerHTML = 'O'
+        
+      },300)
       t7.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t7')
@@ -252,7 +291,10 @@ function game(a) {
       }
     }
     else if (t8.innerHTML == '' && t7.innerHTML == 'O' && t9.innerHTML == 'O') {
+      setTimeout(function(){
       t8.innerHTML = 'O'
+        
+      },300)
       t8.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t8')
@@ -262,7 +304,10 @@ function game(a) {
       }
     }
     else if (t9.innerHTML == '' && t7.innerHTML == 'O' && t8.innerHTML == 'O') {
+      setTimeout(function(){
       t9.innerHTML = 'O'
+        
+      },300)
       t9.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t9')
@@ -274,7 +319,10 @@ function game(a) {
     // for(3,5,7)
 
     else if (t3.innerHTML == '' && t5.innerHTML == 'O' && t7.innerHTML == 'O') {
+      setTimeout(function(){
       t3.innerHTML = 'O'
+        
+      },300)
       t3.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t3')
@@ -284,7 +332,10 @@ function game(a) {
       }
     }
     else if (t5.innerHTML == '' && t3.innerHTML == 'O' && t7.innerHTML == 'O') {
+      setTimeout(function(){
       t5.innerHTML = 'O'
+        
+      },300)
       t5.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t5')
@@ -294,7 +345,10 @@ function game(a) {
       }
     }
     else if (t7.innerHTML == '' && t3.innerHTML == 'O' && t5.innerHTML == 'O') {
+      setTimeout(function(){
       t7.innerHTML = 'O'
+        
+      },300)
       t7.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t7')
@@ -305,7 +359,10 @@ function game(a) {
     }
     // for (4,5,6)
     else if (t4.innerHTML == '' && t5.innerHTML == 'O' && t6.innerHTML == 'O') {
+      setTimeout(function(){
       t4.innerHTML = 'O'
+        
+      },300)
       t4.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t4')
@@ -315,7 +372,10 @@ function game(a) {
       }
     }
     else if (t5.innerHTML == '' && t4.innerHTML == 'O' && t6.innerHTML == 'O') {
+      setTimeout(function(){
       t5.innerHTML = 'O'
+        
+      },300)
       t5.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t5')
@@ -325,7 +385,10 @@ function game(a) {
       }
     }
     else if (t6.innerHTML == '' && t4.innerHTML == 'O' && t5.innerHTML == 'O') {
+      setTimeout(function(){
       t6.innerHTML = 'O'
+        
+      },300)
       t6.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t6')
@@ -336,7 +399,10 @@ function game(a) {
     }
     // for(2,5,8)
     else if (t2.innerHTML == '' && t8.innerHTML == 'O' && t5.innerHTML == 'O') {
+      setTimeout(function(){
       t2.innerHTML = 'O'
+        
+      },300)
       t2.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t2')
@@ -346,7 +412,10 @@ function game(a) {
       }
     }
     else if (t5.innerHTML == '' && t2.innerHTML == 'O' && t8.innerHTML == 'O') {
+      setTimeout(function(){
       t5.innerHTML = 'O'
+        
+      },300)
       t5.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t5')
@@ -356,7 +425,10 @@ function game(a) {
       }
     }
     else if (t8.innerHTML == '' && t2.innerHTML == 'O' && t5.innerHTML == 'O') {
+      setTimeout(function(){
       t8.innerHTML = 'O'
+        
+      },300)
       t8.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t8')
@@ -370,7 +442,10 @@ function game(a) {
     //to stop player win
     // FOR (1,2,3) 
     else if (t3.innerHTML == '' && t2.innerHTML == 'X' && t1.innerHTML == 'X') {
+      setTimeout(function(){
       t3.innerHTML = 'O'
+        
+      },300)
       t3.disabled = 'disabled'
       let t = tilelist.indexOf('t3')
       random = false
@@ -380,7 +455,10 @@ function game(a) {
       }
     }
     else if (t2.innerHTML == '' && t3.innerHTML == 'X' && t1.innerHTML == 'X') {
+      setTimeout(function(){
       t2.innerHTML = 'O'
+        
+      },300)
       t2.disabled = 'disabled'
       let t = tilelist.indexOf('t2')
       random = false
@@ -390,7 +468,10 @@ function game(a) {
       }
     }
     else if (t1.innerHTML == '' && t3.innerHTML == 'X' && t2.innerHTML == 'X') {
+      setTimeout(function(){
       t1.innerHTML = 'O'
+        
+      },300)
       t1.disabled = 'disabled'
       let t = tilelist.indexOf('t1')
       random = false
@@ -401,7 +482,10 @@ function game(a) {
     }
     // for(1,4,7)
     else if (t7.innerHTML == '' && t4.innerHTML == 'X' && t1.innerHTML == 'X') {
+      setTimeout(function(){
       t7.innerHTML = 'O'
+        
+      },300)
       t7.disabled = 'disabled'
       let t = tilelist.indexOf('t7')
       random = false
@@ -411,7 +495,10 @@ function game(a) {
       }
     }
     else if (t4.innerHTML == '' && t7.innerHTML == 'X' && t1.innerHTML == 'X') {
+      setTimeout(function(){
       t4.innerHTML = 'O'
+        
+      },300)
       t4.disabled = 'disabled'
       let t = tilelist.indexOf('t4')
       random = false
@@ -421,7 +508,10 @@ function game(a) {
       }
     }
     else if (t1.innerHTML == '' && t7.innerHTML == 'X' && t4.innerHTML == 'X') {
+      setTimeout(function(){
       t1.innerHTML = 'O'
+        
+      },300)
       t1.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t1')
@@ -432,7 +522,10 @@ function game(a) {
     }
     // for(1,5,9)
     else if (t9.innerHTML == '' && t5.innerHTML == 'X' && t1.innerHTML == 'X') {
+      setTimeout(function(){
+        
       t9.innerHTML = 'O'
+      },300)
       t9.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t9')
@@ -443,8 +536,12 @@ function game(a) {
     }
 
     else if (t5.innerHTML == '' && t9.innerHTML == 'X' && t1.innerHTML == 'X') {
+      setTimeout(function(){
+      
       t5.innerHTML = 'O'
-      t5.disabled = 'disabled'
+    },300)
+      
+      t5.disabled = 'disabled,300'
       random = false
       let t = tilelist.indexOf('t5')
       if (t > -1) {
@@ -454,10 +551,14 @@ function game(a) {
     }
 
     else if (t1.innerHTML == '' && t9.innerHTML == 'X' && t5.innerHTML == 'X') {
+      setTimeout(function(){
+      
       t1.innerHTML = 'O'
+    },300)
+      
       t1.disabled = 'disabled'
       random = false
-      let t = tilelist.indexOf('t1')
+      let t = tilelist.indexOf('t1',300)
       if (t > -1) {
         tilelist.splice(t, 1)
 
@@ -467,17 +568,25 @@ function game(a) {
     // for (3,6,9)
 
     else if (t3.innerHTML == '' && t6.innerHTML == 'X' && t9.innerHTML == 'X') {
+      setTimeout(function(){
+      
       t3.innerHTML = 'O'
+    },300)
+      
       t3.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t3')
       if (t > -1) {
-        tilelist.splice(t, 1)
+        tilelist.splice(t, 1,300)
 
       }
     }
     else if (t6.innerHTML == '' && t3.innerHTML == 'X' && t9.innerHTML == 'X') {
+      setTimeout(function(){
+      
       t6.innerHTML = 'O'
+    },300)
+      
       t6.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t6')
@@ -487,7 +596,10 @@ function game(a) {
       }
     }
     else if (t9.innerHTML == '' && t6.innerHTML == 'X' && t3.innerHTML == 'X') {
+      setTimeout(function(){
       t9.innerHTML = 'O'
+        
+      },300)
       t9.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t9')
@@ -498,7 +610,11 @@ function game(a) {
     }
     // for(7,8,9)
     else if (t7.innerHTML == '' && t8.innerHTML == 'X' && t9.innerHTML == 'X') {
+      setTimeout(function(){
+      
       t7.innerHTML = 'O'
+    },300)
+      
       t7.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t7')
@@ -508,7 +624,10 @@ function game(a) {
       }
     }
     else if (t8.innerHTML == '' && t7.innerHTML == 'X' && t9.innerHTML == 'X') {
+      setTimeout(function(){
       t8.innerHTML = 'O'
+        
+      },300)
       t8.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t8')
@@ -518,7 +637,10 @@ function game(a) {
       }
     }
     else if (t9.innerHTML == '' && t7.innerHTML == 'X' && t8.innerHTML == 'X') {
+      setTimeout(function(){
       t9.innerHTML = 'O'
+        
+      },300)
       t9.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t9')
@@ -529,8 +651,11 @@ function game(a) {
     }
     // for(3,5,7)
 
-    else if (t3.innerHTML == '' && t5.innerHTML == 'X' && t7.innerHTML == 'X') {
+    else if (t3.innerHTML == '' && t5.innerHTML == 'X' && t7.innerHTML == 'X') {setTimeout(function(){
+      
       t3.innerHTML = 'O'
+    },300)
+      
       t3.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t3')
@@ -540,7 +665,10 @@ function game(a) {
       }
     }
     else if (t5.innerHTML == '' && t3.innerHTML == 'X' && t7.innerHTML == 'X') {
+      setTimeout(function(){
       t5.innerHTML = 'O'
+        
+      },300)
       t5.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t5')
@@ -550,7 +678,10 @@ function game(a) {
       }
     }
     else if (t7.innerHTML == '' && t3.innerHTML == 'X' && t5.innerHTML == 'X') {
+      setTimeout(function(){
+        
       t7.innerHTML = 'O'
+      },300)
       t7.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t7')
@@ -561,7 +692,10 @@ function game(a) {
     }
     // for (4,5,6)
     else if (t4.innerHTML == '' && t5.innerHTML == 'X' && t6.innerHTML == 'X') {
+      setTimeout(function(){
+        
       t4.innerHTML = 'O'
+      },300)
       t4.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t4')
@@ -571,7 +705,10 @@ function game(a) {
       }
     }
     else if (t5.innerHTML == '' && t4.innerHTML == 'X' && t6.innerHTML == 'X') {
+      setTimeout(function(){
       t5.innerHTML = 'O'
+        
+      },300)
       t5.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t5')
@@ -581,7 +718,11 @@ function game(a) {
       }
     }
     else if (t6.innerHTML == '' && t4.innerHTML == 'X' && t5.innerHTML == 'X') {
+      setTimeout(function(){
+      
       t6.innerHTML = 'O'
+    },300)
+      
       t6.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t6')
@@ -592,8 +733,11 @@ function game(a) {
     }
     // for(2,5,8)
     else if (t2.innerHTML == '' && t8.innerHTML == 'X' && t5.innerHTML == 'X') {
+      setTimeout(function(){
       t2.innerHTML = 'O'
-      t2.disabled = 'disabled'
+        
+      },300)
+      t2.disabled = 'disabled,300'
       random = false
       let t = tilelist.indexOf('t2')
       if (t > -1) {
@@ -602,21 +746,28 @@ function game(a) {
       }
     }
     else if (t5.innerHTML == '' && t2.innerHTML == 'X' && t8.innerHTML == 'X') {
+      setTimeout(function(){
       t5.innerHTML = 'O'
+        
+      },300)
       t5.disabled = 'disabled'
       random = false
-      let t = tilelist.indexOf('t5')
+      let t = tilelist.indexOf('t5',300)
       if (t > -1) {
         tilelist.splice(t, 1)
 
       }
     }
     else if (t8.innerHTML == '' && t2.innerHTML == 'X' && t5.innerHTML == 'X') {
+      setTimeout(function(){
+      
       t8.innerHTML = 'O'
+    },300)
+      
       t8.disabled = 'disabled'
       random = false
       let t = tilelist.indexOf('t8')
-      if (t > -1) {
+      if (t > -1){
 
         tilelist.splice(t, 1)
 
@@ -638,7 +789,10 @@ function game(a) {
         tilelist.splice(c, 1)
       }
       try {
+        setTimeout(function(){
+          
         document.getElementById(opp).innerText = "O"
+        },300)
         document.getElementById(opp).disabled = "disabled"
       }
       catch {
